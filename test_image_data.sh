@@ -1,0 +1,1 @@
+CUDA_VISIBLE_DEVICES=$1 python test_image_data.py -method wGT -epoch $2 -dataset Video_rain -task RainRemoval/original -data_dir data_NTU -model_name derain_self -checkpoint_dir $3 -list_filename ./lists/video_rain_removal_test.txt -vd vis_img
